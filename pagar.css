@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+.opcoes, .content {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    height: 95%;
+    -webkit-box-shadow: 7px 7px 69px -37px rgba(0,0,0,0.26);
+    -moz-box-shadow: 7px 7px 69px -37px rgba(0,0,0,0.26);
+    box-shadow: 7px 7px 69px -37px rgba(0,0,0,0.26);
+}
+.content {
+    margin-left: 20px;
+    width: 70%;
+    margin-bottom: 30px;
+}
+.opcoes {
+    max-height: 50%;
+    height: auto;
+    max-width: 20%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+table {
+    max-width: 80%;
+    border-collapse: collapse; /* Remove o espaçamento entre as células */      
+    border-radius: 8px;
+}
+
+tr {
+    background-color: #FFFAFA;
+    border: 2px solid #9370DB;
+    border-radius: 8px;
+    color: black;
+}
+
+td,th {
+    padding: 10px; /* Espaçamento interno dentro das células */
+    text-align: left; /* Alinhe o conteúdo das células ao centro */
+}
+
+.btn {
+    display: block;
+    width: 95%;
+    cursor: pointer;
+    padding: 0px 5px;
+    border-radius: 5px;
+} 
+
+.opcoes li {
+    max-width: 100%;
+    width: 100%;
+}   
+
+.opcoes::-webkit-scrollbar { 
+	display: none;
+}
+
+.opcoes a:hover {
+    background-color: #9370DB;
+    color: white;
+}
+
+
+.btnpagar {
+    text-decoration: none;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+img {
+    margin: 0 auto;
+    
+}
+
+.pag-info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pag-info form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.pag-info input[type="submit"] {
+    color: white;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    width: auto;
+    text-transform: uppercase;
+    word-wrap: none;
+}
+
+.pag-info input[type="submit"]:hover {
+    background-color: #4CAF50;
+}
+
+.pag-info input[type="file"] {
+    font-size: 0.9em;
+}
+
+#verIngressos {
+    color: white;
+    background-color: #9370DB;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    width: auto;
+    text-transform: uppercase;
+    word-wrap: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.custom-file-input {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.input-file {
+    display: none;
+}
+
+.custom-file-button {
+    background-color: #9370DB;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.file-name {
+    margin-left: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    .opcoes {
+        margin-left: 20px;
+        margin-bottom: 10px;
+        max-width: 80%;
+        width: 80%;
+    }
+    table {
+        max-width: 100%;
+    }
+    .content {
+        width: 80%;
+    }
+    .custom-file-input {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}

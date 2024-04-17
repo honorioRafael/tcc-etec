@@ -1,0 +1,167 @@
+header {
+    display: flex;
+    flex-direction: left;
+    justify-content: space-between; 
+    padding-left: 5%;
+    padding-right: 5%;
+    align-items: center;
+    color: white;
+    background-color: black;
+}
+
+header img {
+    padding: 5px;
+}
+
+.h-opcs {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    gap: 10px;
+}
+
+.header-li {
+    align-self: center;
+    white-space: nowrap;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-li a {
+    color: inherit;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.header-li  a:hover {
+    background-color: #9370DB;
+}
+
+.sel {
+    border-radius: 0;
+    border-bottom: 2px solid #9370DB;
+    padding-bottom: 8px;
+}
+
+.sel:hover {
+    border-radius: 6px;
+    background-color: none; 
+}
+
+.pesquisa {
+    margin: 0;
+    padding: 0 5px 0 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: white;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.pesquisa input {
+    background-color: none;
+    border: none;
+    width: 100%;
+    appearance: none; 
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+}
+
+.pesquisa input:focus {
+    outline: none;
+}
+
+.pesquisa button {
+    background-color: transparent;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.pesquisa button:hover {
+    cursor: pointer;
+}
+
+input::-webkit-clear-button {
+    display: none;
+}
+input::-webkit-clear-button {
+    display: none;
+}
+
+.logo-maior {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-menor {
+    display: none;
+    margin: 0;
+    padding: 0;
+    align-self: center;
+}
+
+#menu-btn {
+    border-radius: 0px;
+    background-color: #000;
+    border: none;
+    display: none;
+    cursor: pointer;
+}
+
+.h-opcs2 {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 5px 0 5px 0;
+    text-transform: uppercase;
+    text-align: left;
+    background-color: #000;
+    color: white;
+    display: none;
+}
+
+.header-li2 {
+    white-space: nowrap;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    margin-right: 10px;
+    margin-bottom: 13px;
+}
+
+.header-li2 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .pesquisa {
+        width: 50%;
+    }
+    .logo-maior {
+        display: none;
+    }
+    
+    .logo-menor {
+        display: block;
+    }
+
+    #menu-btn {
+        display: block;
+    }
+
+    .h-opcs {
+        display: none;
+    }
+}
+

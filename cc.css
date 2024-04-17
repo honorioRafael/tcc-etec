@@ -1,0 +1,30 @@
+.vt {
+    padding: 10px 30px;
+    font-size: 1.2em;
+}
+
+.btn-pagar {
+    text-decoration: none;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 30px;
+    width: 180px;
+    font-size: 1.2em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.txt-pagar {
+    margin: 0 30px 0 30px;
+    font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+    .btn-pagar {
+        align-self: center;
+    }
+}
